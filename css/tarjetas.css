@@ -1,0 +1,68 @@
+
+.tarjetas-servicios {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.tarjetas-servicios h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para cada tarjeta */
+.tarjeta {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.tarjeta:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.tarjeta p {
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (max-width: 480px) {
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+}

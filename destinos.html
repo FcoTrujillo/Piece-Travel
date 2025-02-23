@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piece Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/destinos.css">
+    <link rel="stylesheet" href="css/font.css">
 </head>
 <body>
     <header>
@@ -28,6 +30,7 @@
 
     <main>
         <section class="buscador">
+        <img src="img/carretera.jpeg" alt="">
             <h2>Encuentra tu ciudad favorita</h2>
             <form class="formulario-busqueda">
                 <input type="text" placeholder="Busca tu ciudad..." aria-label="buscador">
@@ -35,8 +38,10 @@
             </form>
         </section>
 
-        <h2>Destinos Populares</h2>
+        
         <section class="tarjetas">
+            <h2>Destinos Populares</h2>
+                <div class="contenedor-tarjetas">
                 <div class="tarjeta">
                     <img src="img/roma.jpg" alt="Roma">
                     <h3>Roma</h3>
@@ -67,16 +72,16 @@
                     <h3>Londres</h3>
                     <p>Explora la capital del Reino Unido, famosa por su historia y diversidad cultural.</p>
                 </div>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <div class="redes-sociales">
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-        </div>
+        <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
         <p>© 2025 Piece Travel. Todos los derechos reservados.</p>
     </footer>
 </body>

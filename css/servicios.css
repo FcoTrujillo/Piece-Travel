@@ -1,0 +1,32 @@
+.contenedor-columnas {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.columna-imagen, .columna-texto {
+    margin-left: 10px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.columna-imagen img {
+    width: 80%;
+    height: auto;
+}
+
+@media (max-width: 480px) {
+    .contenedor-columnas {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .columna-imagen, .columna-texto {
+        width: 100%;
+    }
+
+    .columna-imagen img {
+        width: 90%;
+    }
+}

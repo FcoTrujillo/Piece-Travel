@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piece Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/font.css">
 </head>
 <body>
     <header>
@@ -27,10 +29,12 @@
     </header>
 
     <section class="contacto">
-        <h2>Contacto</h2>
-        <p>¿Tienes alguna duda? ¡Contáctanos!</p>
+        <h2>¿Tienes alguna duda? ¡Contáctanos!</h2>
         
-        <form class="formulario-contacto" action="#" method="POST">
+        <div class="formulario container">
+            <img src="img/puente-playa.jpeg" alt="" class="fondo-formulario">
+
+            <form class="formulario-contacto" action="#" method="POST">
             <div class="campo">
                 <label for="nombre">Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
@@ -40,15 +44,11 @@
                 <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
             </div>
             <div class="campo">
-                <label for="telefono">Teléfono (opcional):</label>
+                <label for="telefono">Teléfono:</label>
                 <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
             </div>
             <div class="campo">
-                <label for="asunto">Asunto:</label>
-                <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
-            </div>
-            <div class="campo">
-                <label for="tipo-consulta">Tipo de consulta:</label>
+                <label for="tipo-consulta">Asunto:</label>
                 <select id="tipo-consulta" name="tipo-consulta">
                     <option value="reservas">Reservas</option>
                     <option value="informacion">Información</option>
@@ -61,16 +61,16 @@
                 <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
             </div>
             <button type="submit">Enviar</button>
-        </form>
+            </form> 
+        </div>
     </section>
 
 
     <footer>
-        <div class="redes-sociales">
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-        </div>
+        <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
         <p>© 2025 Piece Travel. Todos los derechos reservados.</p>
     </footer>
 </body>

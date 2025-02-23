@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     margin: 0;
@@ -7,20 +8,22 @@ body {
 }
 
 header {
-    background-color: #77b5e5; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Alineación del texto */
+    font-family: 'Roboto', sans-serif;
+    background-color: #77b5e5;
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center; 
+    margin-bottom: auto;
 }
 
 header img {
     width: 100px;
-    height: auto; /* Altura automática para mantener la proporción */
+    height: auto; 
 }
 
 header .logo img {
-    width: 100px; /* Ancho del logo */
-    margin-top: 50px; /* Altura automática para mantener la proporción */
+    width: 100px;
+    margin-top: 50px;
     margin-right: 70%;
 }
 
@@ -31,6 +34,9 @@ header .navbar{
 }
 
 header .navbar li{
+    background-color:  #0563e1;
+    border-radius: 10px;
+    padding: 2px;
     list-style: none;
     margin-left: 10px;
 }
@@ -51,31 +57,54 @@ header .navbar li a:hover{
     padding: 2px;  
    }
 
-/* Estilos para el Footer */
+
 footer {
-    background-color: #77b5e5; /* Color de fondo */
-    color: white; /* Color del texto */
-    text-align: center; /* Alineación del texto */
-    padding: 20px; /* Espaciado interno */
-    margin-top: 20px; /* Espaciado superior */
+    font-family: 'Roboto', sans-serif;
+    background-color: #77b5e5; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    margin-top: auto; 
 }
 
-footer .redes-sociales {
-    margin-bottom: 10px; /* Espaciado inferior */
+footer a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 24px;
 }
 
-footer .redes-sociales img {
-    width: 30px; /* Ancho de los íconos */
-    height: auto; /* Altura automática */
-    margin: 0 10px; /* Espaciado entre íconos */
-    transition: transform 0.3s ease; /* Transición suave al hacer hover */
-}
-
-footer .redes-sociales img:hover {
-    transform: scale(1.2); /* Efecto de escala al hacer hover */
+footer a:hover {
+    color: #0563e1;
 }
 
 footer p {
-    margin: 0; /* Elimina el margen por defecto del párrafo */
-    font-size: 1em; /* Tamaño de la fuente */
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 60px;
+    }
+
+    header .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .navbar li {
+        margin: 5px 0;
+    }
+
+    header .navbar li a {
+        font-size: 0.8em;
+    }
+
+    footer a {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
 }
